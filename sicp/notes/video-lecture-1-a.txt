@@ -1,0 +1,37 @@
+Lecture 1A: Overview and Introduction to Lisp
+
+Essence of computer science: formalizing intuitions about processes; research on the imperative knowledge of "how to".
+What directs the process (the "how to") is the set of rules called procedure.
+
+The real challenge of computer science is to build systems for very large numbers and operations.
+
+Techniques for controlling the complexity of large systems:
+- Black-box abstraction: take an object and build a black box around it. The process then becomes reusable. 
+- Conventional interface: agreed upon ways of thinking of things together -- generic operations, large-scale structure and modularity, object-oriented programming, operations on aggregates
+- Metalinguistic abstraction: constructiong new languages by examining the process of interpretation. Interpretation and apply-eval, example-logic programming, register machines.
+
+Computer science deals with idealized components. There is little consideration to the real material aspects in this science -- therefore, there is little separation between what we can build and what we can imagine. The limitations for building software systems are the limitations of our own minds.
+
+#######
+
+Framework for learning languages:
+
+1. What are the primitive elements of the languages?
+2. What are the means of combination?
+3. What are the means of abstraction?
+
+Primitive elements in Lisp: 
+3, 17.4, 5
++ - * /
+
+Combination in Lisp:
+Prefix notation
+(+ 3 17.4 5) ==> 25.4
+(+ 3 (* 5 6) 8 2) ==> 43
+
+Lambda form:
+(define square (lambda (x (* x x))))
+
+Having defined a procedure, it is possible to use it as if it were a primitive. The person definign a new procedure does not need to know whether a procedure he is using was built into the language primitively or defined in code. It is a key characteristic of Lisp, that allows construct to have all the power of procedures as if they were primitive.
+
+The difference between defininf names with or without brackets comes to whether or not we are defining a procedure.
