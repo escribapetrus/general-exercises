@@ -37,13 +37,3 @@ foldl' f acc (x:xs) = foldl' f (f acc x) xs
 foldr' :: (a -> b -> b) -> b -> [a] -> b
 foldr' f acc [] = acc
 foldr' f acc lst = foldr' f (f (last(lst)) acc) (init(lst))
-
-l_words = ["kerfuffle","cacophony","rumpelstiltskin","ragamuffin","whippersnapper","gobbledygook","gibberish","poppycock","defenestrate","flummox","lackadaisical"]
-get_fletter word = word !! 0
-spell_word word = [(get_fletter word)] ++ " is for " ++ word
-spell_book book = map (\x -> spell_word x) book
-spell_book_string :: [[Char]] -> [Char]
-spell_book_string spellbook = tail (tail (foldl (\x y -> x ++ "; " ++ y) "" spellbook))
-print_spellbook :: String -> IO ()
-print_spellbook book = print book
-main' dict = print_spellbook (spell_book_string (spell_book dict)) 
