@@ -37,6 +37,7 @@ foldl' f acc (x:xs) = foldl' f (f acc x) xs
 foldr' :: (a -> b -> b) -> b -> [a] -> b
 foldr' f acc [] = acc
 foldr' f acc lst = foldr' f (f (last(lst)) acc) (init(lst))
+<<<<<<< HEAD
 
 data Tree = Leaf | Node Int Tree Tree deriving Show
 
@@ -79,3 +80,5 @@ listify Leaf = []
 listify (Node x rig lef) = x : listify rig ++ listify lef
 
 m = Node 0 (Node 0 Leaf (Node 1 Leaf (Node 2 Leaf (Node 3 Leaf (Node 0 Leaf (Node 1 Leaf (Node 2 Leaf (Node 3 Leaf Leaf)))))))) (Node 1 Leaf (Node 2 Leaf (Node 3 Leaf Leaf)))
+=======
+>>>>>>> 43cc62b7b3bf415d4ceebcea0922e8e44934fe7f
