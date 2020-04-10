@@ -1,0 +1,28 @@
+Semestre Atual: 2019.2
+Estudante Matricula Score Semestre de Ingresso
+John Snow
+123821
+9.5
+2.2018Disciplinas matriculadas:
+EXA801 Algoritmos e Programação I
+TEC502 Concorrência e Conectividade
+Estudante Matricula Score Semestre de Ingresso
+Mauricio de Sousa
+342343
+7.5
+2.2016Disciplinas matriculadas:
+EXA801 Algoritmos e Programação I
+TEC502 Concorrência e Conectividade
+Estudante Matricula Score Semestre de Ingresso
+Maria Clara
+756865
+4.5
+1.2017Disciplinas matriculadas:
+EXA801 Algoritmos e Programação I
+TEC502 Concorrência e Conectividade
+Estudante Matricula Score Semestre de Ingresso
+Jenny
+4723587
+10.0
+1.2020Disciplinas matriculadas:
+TEC502 Concorrência e Conectividade
