@@ -37,7 +37,6 @@ foldl' f acc (x:xs) = foldl' f (f acc x) xs
 foldr' :: (a -> b -> b) -> b -> [a] -> b
 foldr' f acc [] = acc
 foldr' f acc lst = foldr' f (f (last(lst)) acc) (init(lst))
-<<<<<<< HEAD
 
 data Tree = Leaf | Node Int Tree Tree deriving Show
 
@@ -49,6 +48,7 @@ val' :: Tree -> Int
 val' Leaf = 0
 val' (Node x lef rig) = x + (val' lef) + (val' rig)
 
+-- to check isSorted, call function with tree, minBound, maxBound as values
 isSorted :: Tree -> Int -> Int -> Bool
 isSorted Leaf _ _ = True
 isSorted (Node x lef rig) min' max' =
@@ -56,7 +56,6 @@ isSorted (Node x lef rig) min' max' =
     where
         lefSorted = isSorted lef min' x
         rigSorted = isSorted rig x max'
--- to check isSorted, call function with tree, minBound, maxBound as values
 
 newMax :: Tree -> Tree
 newMax Leaf = Node 0 Leaf Leaf
@@ -78,7 +77,3 @@ subst' (Node x rig lef) find sub =
 listify :: Tree -> [Int]
 listify Leaf = []
 listify (Node x rig lef) = x : listify rig ++ listify lef
-
-m = Node 0 (Node 0 Leaf (Node 1 Leaf (Node 2 Leaf (Node 3 Leaf (Node 0 Leaf (Node 1 Leaf (Node 2 Leaf (Node 3 Leaf Leaf)))))))) (Node 1 Leaf (Node 2 Leaf (Node 3 Leaf Leaf)))
-=======
->>>>>>> 43cc62b7b3bf415d4ceebcea0922e8e44934fe7f
