@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>musical scales</title>
+</head>
+<body>
+    <div id="content">
+        <h1>Musical scale generator</h1>
+        <p>This little app generates 75 combinations of musical scales, based on the key note and the scale type.</p> 
+        <p>Test it and use it for your creations!</p>
+        <div>
+            <label for="scale">Select scale: </label>
+            <select name="scale" id="scale">
+                <option value="major">major scale</option>
+                <option value="minor">minor scale</option>
+                <option value="major_harmonic">major harmonic scale</option>
+                <option value="minor_harmonic">minor harmonic scale</option>
+                <option value="major_pentatonic">major pentatonic scale</option>
+                <option value="minor_pentatonic">minor pentatonic scale</option>
+            </select>
+        </div>
+        <div>
+            <label for="">Select key:</label>
+            <input type="radio" id="c" name="key" value="c">
+            <label for="c">c</label>
+            <input type="radio" id="c#" name="key" value="c#">
+            <label for="c#">c#</label>
+            <input type="radio" id="d" name="key" value="d">
+            <label for="d">d</label>
+            <input type="radio" id="d#" name="key" value="d#">
+            <label for="d#">d#</label>
+            <input type="radio" id="e" name="key" value="e">
+            <label for="e">e</label>
+            <input type="radio" id="f" name="key" value="f">
+            <label for="f">f</label>
+            <input type="radio" id="f#" name="key" value="f#">
+            <label for="f#">f#</label>
+            <input type="radio" id="g" name="key" value="g">
+            <label for="g">g</label>
+            <input type="radio" id="g#" name="key" value="g#">
+            <label for="g#">g#</label>
+            <input type="radio" id="a" name="key" value="a">
+            <label for="other">a</label>
+            <input type="radio" id="a#" name="key" value="a#">
+            <label for="a#">a#</label>
+            <input type="radio" id="b" name="key" value="b">
+            <label for="b">b</label>
+        </div>
+        <div>
+            <button>generate</button>
+        </div>
+        <div>
+            <h4>results: <span class="result"></span></h4>
+        </div>
+    </div>
+    <script src="musical-scales.js"></script>
+</body>
+</html>

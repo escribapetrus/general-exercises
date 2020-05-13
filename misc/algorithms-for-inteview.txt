@@ -1,0 +1,16 @@
+ref: algoexpert.io
+
+- Depth first search
+Fundamental graph/tree traversal algorithm
+
+- Breadth first search
+
+- Matching parenthesis
+
+- Hash tables for memoization
+
+- reversing linked lists
+
+- recursion
+
+- custom data structures
