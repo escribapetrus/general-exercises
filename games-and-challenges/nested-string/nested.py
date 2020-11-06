@@ -1,11 +1,11 @@
 
-test_1 = "([]{}((}})))"
-test_2 = "([]{}(()))"
-test_3 = "([])"
-test_4 = "([]{}()"
-test_5 = "([]{}(()))"
-test_6 = "()"
-test_7 = "()()"
+test_1 = "([]{}((}})))" #false
+test_2 = "([]{}(()))"   #true
+test_3 = "([])"         #true
+test_4 = "([]{}()"      #false
+test_5 = "([]{}(())[])" #true
+test_6 = "()"           #true   
+test_7 = "()()"         #true
 
 
 def test_string(string):
@@ -22,9 +22,10 @@ def test_string(string):
         else:
             if len(open_) > 1:
                 #open_[-1] == opener_for[open_[-1]]
-                if not open_[-1] == opener_for[t]:
+                if open_[-1] == opener_for[t]:
+                    open_ = open_[:-1]
+                else:
                     res = False
-        print(open_)
     return res 
 
 print(test_string(test_1))

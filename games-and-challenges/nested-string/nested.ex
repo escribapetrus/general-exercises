@@ -1,7 +1,7 @@
 defmodule Nested do
 
   def is_correctly_nested?(""), do: true
-  def is_correctly_nested(str) do
+  def is_correctly_nested?(str) do
     cond do
       is_valid?(str) ->
         case remove_pairs(str) do

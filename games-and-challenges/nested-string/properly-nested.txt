@@ -1,0 +1,4 @@
+"Properly Nested"
+Solving an algorithm using recursion and regex matching with Elixir
+
+Say we have a string of parentheses, brackets, and curly braces, and we want to check whether they are properly nested (for evaluation, for example). This problem is 
